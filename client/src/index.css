@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+/* CUSTOME
+  - button primary
+  - button outline secondary
+*/
+
+.success {
+  font-size: 16;
+  color: rgb(0, 255, 71);
+  background-color: rgba(0, 255, 71, 0.2);
+  width: 200;
+}
+
+.pending {
+  font-size: 16;
+  color: rgb(255, 217, 0);
+  background-color: rgba(255, 217, 0, 0.2);
+  width: 200;
+}
+
+.cancel {
+  font-size: 16;
+  color: rgb(255, 0, 0);
+  background-color: rgba(255, 0, 0, 0.2);
+  width: 200;
+}
+
+.btn-primary {
+  color: #fff !important;
+  background-color: #cd2e71 !important;
+  border-color: #cd2e71 !important;
+}
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus,
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: rgb(171, 41, 106) !important;
+  border-color: #ab296a !important;
+}
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(171, 41, 106, 0.5) !important;
+}
+
+.btn-dark {
+  color: #fff !important;
+  background-color: #000 !important;
+  border-color: #000 !important;
+}
+
+.btn-outline-secondary {
+  background: rgba(210, 210, 210, 0.25) !important;
+  border: 2px solid #d2d2d2 !important;
+  height: 54px;
+  text-align: left !important;
+}
+.btn-check:focus + .btn-outline-secondary,
+.btn-outline-secondary:focus,
+.btn-outline-secondary:hover {
+  color: #fff !important;
+  background-color: rgba(210, 210, 210, 0.25) !important;
+  border-color: #ab296a !important;
+}
+
+.btn-check:focus + .btn-dark,
+.btn-dark:focus,
+.btn-dark:hover {
+  color: #fff !important;
+  background-color: #212529 !important;
+  border-color: rgb(33, 37, 41) !important;
+}
+
+.btn-check:focus + .btn-dark,
+.btn-dark:focus {
+  box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.5) !important;
+}
+
+/* END CUSTOME */
+
+.text-mega {
+  color: rgb(171, 41, 106) !important;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* IE */
+  scrollbar-width: none; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+.avatar {
+  border: 0.2rem solid #cd2e71;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+body {
+  background-color: black !important;
+}
+
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.banner-filter {
+  width: 5rem;
+  height: 447px;
+  /* background-color: red; */
+  background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.1) rgba(37, 37, 37, 0.1));
+  z-index: -1;
+}
+
+.banner-title {
+  font-size: 48;
+  color: #cd2e71;
+  width: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.popover {
+  /* max-width: 140px !important; */
+  inset: 12px auto auto -70px !important;
+  background-color: #0d0d0d !important;
+}
+
+.popover-arrow {
+  left: 66px !important;
+}
+
+.popover-body {
+  padding: 0rem 0rem !important;
+}
+
+.popover-body div:hover {
+  background-color: #00000080;
+  cursor: pointer;
+}
+
+.bs-popover-auto[data-popper-placement^='bottom'] > .popover-arrow::after,
+.bs-popover-bottom > .popover-arrow::after {
+  border-bottom-color: #0d0d0d !important;
+  border-width: 0 0.8rem 1.05rem 0.8rem !important;
+  top: -7px !important;
+}
+
+hr {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  border: none;
+  border-top: 3px solid rgb(214, 214, 214) !important;
+}
+
+.modal-dialog {
+  max-width: 350px !important;
+  border-radius: 10px;
+}
+
+.modal-content {
+  border-radius: 10px !important;
+  background-color: #0d0d0d !important;
+  padding: 0.5rem;
+}
+
+.modal-header {
+  padding: 2rem 1rem 0 1rem;
+}
+
+.modal-title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600 !important;
+}
+
+.modal-footer {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 0.85rem 0 0.85rem;
+  border: 0 !important;
+}
+
+textarea.form-control::placeholder,
+input.form-control::placeholder {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+
+textarea.form-control,
+input.form-control {
+  color: white;
+  background: rgba(210, 210, 210, 0.25);
+  border: 2px solid #d2d2d2;
+  font-size: 18px;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+textarea.form-control:focus,
+input.form-control:focus {
+  box-shadow: none;
+  border-color: #cd2e71;
+  color: white;
+  background: rgba(210, 210, 210, 0.25);
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transition: transform 450ms;
+  border-radius: 8px;
+}
+
+.poster:hover {
+  transform: scale(1.05);
+}
+
+.title {
+  font-size: 48px;
+}
+
+.price {
+  font-size: 18px;
+}
+
+.description {
+  line-height: 2.5;
+}
+
+.profile-picture {
+  object-fit: cover;
+  width: 100%;
+}
+
+.orders {
+  height: 70vh;
+  padding-top: 1px;
+  padding-left: 14px;
+  padding-right: 14px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* IE */
+  scrollbar-width: none; /* Firefox */
+}
+
+.orders::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+.order-item {
+  width: 100%;
+  background-color: rgba(171, 41, 106, 0.4) !important;
+  color: #fff;
+}
+
+th {
+  color: #e50914;
+  font-weight: 600;
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-bottom-width: 2px;
+  border-bottom-color: #c4c4c4 !important;
+}
+
+td {
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+}
+
+.img-preview {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 8px;
+}
+
+.thumbnail {
+  /* object-fit: contain; */
+  aspect-ratio: 16 / 9;
+  width: 349px;
+  height: 485px;
+  border-radius: 10px !important;
+  z-index: 999;
+}
+
+.page-not-found {
+  object-fit: contain;
+  width: 25%;
+  height: 25%;
+}
+
+.order-not-found {
+  object-fit: contain;
+  width: 60%;
+}
+
+.banner-description {
+  width: 90%;
+  line-height: 1.7;
+  color: '#fff';
+}
